@@ -1,0 +1,134 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /*primary*/
+    --light-red: hsl(356, 100%, 66%);
+    --vlight-red: hsl(355, 100%, 74%);
+    --vdark-blue: hsl(208, 49%, 24%);
+
+    /*neutral*/
+    --white: hsl(0, 0%, 100%);
+    --grayish-blue: hsl(240, 2%, 79%);
+    --vdark-grayish-blue: hsl(207, 13%, 34%);
+    --black-blue: hsl(240, 10%, 16%);
+
+    /*gradient*/
+    /*Background gradient - Intro/CTA mobile nav:*/
+    --bg-vlight-red: hsl(13, 100%, 72%);
+    --bg-light-red: hsl(353, 100%, 62%);
+
+    /*Background gradient - body:*/
+    --vdark-gray-blue: hsl(237, 17%, 21%);
+    --vdark-desat-blue: hsl(237, 23%, 32%);
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--vlight-red);
+    border-bottom-left-radius: 50px;
+    background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-size: cover;
+    background-position: 0% 70%;
+    padding: 2rem 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    
+}
+
+.nav-list {
+    background-color: var(--white);
+    padding: 1rem;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.dropbtn {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    margin: 0;
+}
+
+.dropdown:hover svg {
+    transform: rotate(0.5turn)
+}
+
+.sub-menu {
+    display: none;
+    background-color: var(--grayish-blue);
+    margin-top: 1em;
+}
+
+.dropdown:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown svg {
+    margin-left: .5em;
+}
+
+.sub-menu a {
+    color: var(--black-blue);
+    margin: 1em 0;
+    
+}
+
+.sub-menu a:hover {
+    font-weight: bold;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--grayish-blue);
+    margin-top: 1rem;
+}
+
+.login {
+    margin: 2em 0 1em;
+}
+
+.signup {
+    padding: 0.5em 2em;
+    background: linear-gradient(to right, var(--bg-vlight-red), var(--bg-light-red));
+    border-radius: 20px;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 650px) {
+    header {
+        background-color: var(--vlight-red);
+        border-bottom-left-radius: 50px;
+        background-image: url("./images/bg-pattern-intro-desktop.svg");
+        background-size: cover;
+        background-position: 0% 70%;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
