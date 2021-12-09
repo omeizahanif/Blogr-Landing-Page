@@ -148,10 +148,6 @@ a {
     padding: 0;
 }
 
-/*.hero > * {
-    border: 1px solid green;
-}*/
-
 .hero-title {
     margin: 0;
     text-align: center;
@@ -204,14 +200,13 @@ main {
 
 .subtitle {
     text-align: center;
-    margin: 2em 0;
+    margin: 3em 0 1em;
 }
 
 .illustration {
     width: 100%;
-    min-height: 60vh;
-    border: 1px solid red;
-    margin: 5em auto;
+    min-height: 30vh;
+    margin: 0 auto;
 }
 
 .editor {
@@ -221,10 +216,6 @@ main {
     background-size: contain;
 }
 
-/*.mobile {
-    background-color: #fff;
-    
-}*/
 
 .mobile-svg {
     background-image: url("./images/illustration-phones.svg");
@@ -232,7 +223,7 @@ main {
     width: 100%;
     min-height: 60vh;
     position: absolute;
-    top: -70%;
+    top: -40%;
 }
 
 .content {
@@ -241,15 +232,15 @@ main {
     line-height: 1.7;
 }
 
-.content h3 {
-    font-size: 1.8rem;
-    margin: .5em auto;
-    max-width: 90%;
+.content h2 {
+    margin: 0 auto;
+    max-width: 80%;
     padding: 0;
+    border: 1px solid red;
 }
 
 .content p {
-    margin: 0 auto;
+    margin: 1em auto 2em;
     max-width: 90%;
 }
 
@@ -258,27 +249,31 @@ main {
 }
 
 .mobile-section {
-    margin-top: 16rem;
+    margin: 16rem 0 3rem;
     position: relative;
 }
 
 .mid-column {
-    border: 1px solid yellow;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: var(--vdark-gray-blue);
-    padding: 10em 0 3em 0;
+    padding: 12em 0 3em 0;
     background-image: url("./images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -40px -180px;
 }
 
-.mobile-section h3, .mobile-section p{
+.mobile-section h2, .mobile-section p{
     color: var(--white) !important; 
 }
 
-
+.desktop {
+    background-image: url("./images/illustration-laptop-mobile.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 @media only screen and (min-width: 650px) {
     header {
