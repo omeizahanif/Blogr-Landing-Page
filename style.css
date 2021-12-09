@@ -30,11 +30,11 @@ body {
 }
 
 header {
-    background-color: var(--vlight-red);
+    background-color: var(--bg-light-red);
     border-bottom-left-radius: 50px;
     background-image: url("./images/bg-pattern-intro-mobile.svg");
-    background-size: cover;
-    background-position: 0% 70%;
+    background-size: 70em;
+    background-position: 35% 35%;
     padding: 2rem 1rem;
 }
 
@@ -44,8 +44,20 @@ a {
 
 .nav {
     display: flex;
-    position: relative;
-    
+    position: relative; 
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: none;
 }
 
 .nav-list {
@@ -55,6 +67,7 @@ a {
     top: 50px;
     width: 100%;
     border-radius: 5px;
+    display: none;
 }
 
 .nav-list li {
@@ -68,6 +81,10 @@ a {
     outline: none;
     background-color: var(--white);
     margin: 0;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
 }
 
 .dropdown:hover svg {
@@ -109,15 +126,159 @@ a {
 }
 
 .login {
-    margin: 2em 0 1em;
+    margin: 2em 0;
+    color: black;
 }
 
 .signup {
-    padding: 0.5em 2em;
+    padding: .8em 2.5em;
     background: linear-gradient(to right, var(--bg-vlight-red), var(--bg-light-red));
     border-radius: 20px;
     color: var(--white);
 }
+
+.signup:hover,
+.signup:focus {
+    background: var(--vlight-red);
+}
+
+.hero {
+    margin: 5rem 1rem;
+    color: var(--white);
+    padding: 0;
+}
+
+/*.hero > * {
+    border: 1px solid green;
+}*/
+
+.hero-title {
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.hero-description {
+    text-align: center;
+}
+
+.cta {
+    margin: 3rem auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cta-start {
+    background-color: var(--white);
+    color: var(--light-red);
+}
+
+.cta-learn {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.cta-learn,
+.cta-start {
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.cta-start:hover, 
+.cta-start:focus {
+    background: var(--vlight-red);
+    color: var(--white);
+}
+
+.cta-learn:hover, 
+.cta-learn:focus {
+    background: var(--white);
+    color: var(--vlight-red);
+}
+
+/** main */
+
+main {
+    padding: 0;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.illustration {
+    width: 100%;
+    min-height: 60vh;
+    border: 1px solid red;
+    margin: 5em auto;
+}
+
+.editor {
+    background-image: url("./images/illustration-editor-mobile.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*.mobile {
+    background-color: #fff;
+    
+}*/
+
+.mobile-svg {
+    background-image: url("./images/illustration-phones.svg");
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;
+    position: absolute;
+    top: -70%;
+}
+
+.content {
+    color: var(--vdark-grayish-blue);
+    text-align: center;
+    line-height: 1.7;
+}
+
+.content h3 {
+    font-size: 1.8rem;
+    margin: .5em auto;
+    max-width: 90%;
+    padding: 0;
+}
+
+.content p {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.mobile-section {
+    margin-top: 16rem;
+    position: relative;
+}
+
+.mid-column {
+    border: 1px solid yellow;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: var(--vdark-gray-blue);
+    padding: 10em 0 3em 0;
+    background-image: url("./images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -40px -180px;
+}
+
+.mobile-section h3, .mobile-section p{
+    color: var(--white) !important; 
+}
+
+
 
 @media only screen and (min-width: 650px) {
     header {
