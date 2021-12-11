@@ -70,7 +70,8 @@ a {
     display: none;
 }
 
-.nav-list li {
+.nav-list li,
+.footer-nav li {
     list-style: none;
     margin-bottom: 1em;
 }
@@ -219,11 +220,14 @@ main {
 
 .mobile-svg {
     background-image: url("./images/illustration-phones.svg");
-    background-size: cover;
-    width: 100%;
-    min-height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 50%;
+    min-height: 50vh;
     position: absolute;
     top: -40%;
+    left: 25%;
 }
 
 .content {
@@ -236,11 +240,10 @@ main {
     margin: 0 auto;
     max-width: 80%;
     padding: 0;
-    border: 1px solid red;
 }
 
-.content p {
-    margin: 1em auto 2em;
+.content p, .content div p {
+    margin: 1em auto 3em;
     max-width: 90%;
 }
 
@@ -249,7 +252,7 @@ main {
 }
 
 .mobile-section {
-    margin: 16rem 0 3rem;
+    margin: 10rem 0 2rem;
     position: relative;
 }
 
@@ -257,11 +260,11 @@ main {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     background-color: var(--vdark-gray-blue);
-    padding: 12em 0 3em 0;
+    padding: 8em 0 3em 0;
     background-image: url("./images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -40px -180px;
+    background-position: -10px -180px;
 }
 
 .mobile-section h2, .mobile-section p{
@@ -273,6 +276,40 @@ main {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+footer {
+    background-color: var(--black-blue);
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.footer-nav {
+    padding: 0;
+    margin: 2em 0;
+}
+
+.footer-nav p {
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-nav div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 2em;
+
+}
+
+.footer-nav div a {
+    color:var(--grayish-blue);
+    text-align: center;
+    margin: .2em 0;
+    /*border: 1px solid red;*/
 }
 
 @media only screen and (min-width: 650px) {
