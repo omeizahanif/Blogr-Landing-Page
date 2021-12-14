@@ -327,27 +327,28 @@ footer {
     color:var(--grayish-blue);
     text-align: center;
     margin: .2em 0;
-    /*border: 1px solid red;*/
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
     header {
-        background-color: var(--vlight-red);
+        /*background-color: var(--vlight-red);*/
         border-bottom-left-radius: 50px;
         background-image: url("./images/bg-pattern-intro-desktop.svg");
-        background-size: cover;
-        background-position: 0% 70%;
+        background-size: 120em;
+        background-position: 20% 50%;
     }
 
     .nav {
-        display: flex;
-        border: 1px solid green;
+        align-items: flex-start;
     }
 
+    .nav > svg {
+        min-width: 18%;
+    } 
 
     .hamburger,
     .close {
-        display: none;
+        display: none !important;
     }
     
     .nav-list {
@@ -355,10 +356,19 @@ footer {
         position: unset;
         top: unset;
         border-radius: unset;
-        display: flex;
-        width: 90%;
-        margin: 0 0 0 2em;
+        display: flex !important;
+        width: 80%;
+        margin: 0;
         padding: 0;
+        justify-content: space-between;
+        
+    }
+
+    .nav-list ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
     }
 
     .dropdown {
@@ -394,22 +404,42 @@ footer {
 
     .login-block {
         flex-direction: row;
-        border-top: unset;
-        margin: 0 0 0 1em;
-        border: 1px solid green;
+        border-top: unset;      
         padding: 0;
+        margin: 0;
+        
     }
 
     .login {
-        margin: 0;
+        margin: 0 1em;
         color: black;
     }
     
     .signup {
-        padding: .2em 2em;
+        padding: .2em 1em;
+        margin: 0 1em;
         border-radius: 20px;
         background: var(--white);
         color: var(--bg-light-red);
+    }
+
+    .signup:hover, 
+    .signup:focus,
+    .login:hover,
+    .login:focus {
+        color: var(--white);
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta-start {
+        margin-right: .5em;
+    }
+
+    br {
+        display: none;
     }
 }
 
