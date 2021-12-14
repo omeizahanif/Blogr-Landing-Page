@@ -27,6 +27,8 @@
 
 body {
     margin: 0;
+    font-family: 'Overpass', sans-serif;
+    
 }
 
 header {
@@ -35,16 +37,23 @@ header {
     background-image: url("./images/bg-pattern-intro-mobile.svg");
     background-size: 70em;
     background-position: 35% 35%;
-    padding: 2rem 1rem;
+    padding: 1rem;
 }
 
 a {
     text-decoration: none;
+    
+}
+
+a, button {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav {
     display: flex;
-    position: relative; 
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .hamburger {
@@ -84,8 +93,16 @@ a {
     margin: 0;
 }
 
+.dropbtn svg {
+    stroke: #FF7B86;
+}
+
 .dropbtn:hover {
     text-decoration: underline;
+}
+
+.dropdown {
+    padding: 1em;
 }
 
 .dropdown:hover svg {
@@ -96,22 +113,23 @@ a {
     display: none;
     background-color: var(--grayish-blue);
     margin-top: 1em;
+    padding: .5em;
 }
 
 .dropdown:hover .sub-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
 }
+
 
 .dropdown svg {
     margin-left: .5em;
 }
 
 .sub-menu a {
+    display: block;
     color: var(--black-blue);
     margin: 1em 0;
-    
+    text-align: center;
 }
 
 .sub-menu a:hover {
@@ -319,6 +337,79 @@ footer {
         background-image: url("./images/bg-pattern-intro-desktop.svg");
         background-size: cover;
         background-position: 0% 70%;
+    }
+
+    .nav {
+        display: flex;
+        border: 1px solid green;
+    }
+
+
+    .hamburger,
+    .close {
+        display: none;
+    }
+    
+    .nav-list {
+        background-color: unset;
+        position: unset;
+        top: unset;
+        border-radius: unset;
+        display: flex;
+        width: 90%;
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
+
+    .dropdown {
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .dropbtn {
+        padding: 1em;
+        background-color: unset;
+        color: white;
+    }
+
+    .dropbtn svg {
+        stroke: var(--white);
+    }
+
+    .sub-menu {
+        position: absolute;
+        background-color: var(--white);
+        margin-top: 1em;
+        padding: 1rem 2rem;
+        top: 25px;
+        left: -2px;
+    }
+
+    .dropdown:hover .sub-menu {
+        display: block;
+    }
+
+    .login-block {
+        flex-direction: row;
+        border-top: unset;
+        margin: 0 0 0 1em;
+        border: 1px solid green;
+        padding: 0;
+    }
+
+    .login {
+        margin: 0;
+        color: black;
+    }
+    
+    .signup {
+        padding: .2em 2em;
+        border-radius: 20px;
+        background: var(--white);
+        color: var(--bg-light-red);
     }
 }
 
