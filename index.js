@@ -16,20 +16,3 @@ closeMenu.addEventListener("click", function(e) {
     openMenu.style.display = "block";
     closeMenu.style.display = "none";
 });
-
-/*dropBtn.forEach((button) => {
-    button.addEventListener("click", function(){
-        subMenu.forEach((item) => {
-            item.classList.remove("show");
-        })
-        
-        button.nextElementSibling.classList.add("show");
-
-    })
-})*/
-
-/*hero.addEventListener("click", function() {
-    subMenu.forEach((item) => {
-        item.style.display = "none";
-    })
-})*/
