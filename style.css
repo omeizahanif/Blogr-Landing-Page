@@ -99,6 +99,7 @@ a, button {
 
 .dropbtn:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -106,7 +107,8 @@ a, button {
 }
 
 .dropdown:hover svg {
-    transform: rotate(0.5turn)
+    transform: rotate(0.5turn);
+    cursor: pointer;
 }
 
 .sub-menu {
