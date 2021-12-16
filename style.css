@@ -340,6 +340,7 @@ footer {
 
     .nav {
         align-items: flex-start;
+        padding-left: 2.5rem;
     }
 
     .nav > svg {
@@ -359,16 +360,13 @@ footer {
         display: flex !important;
         width: 80%;
         margin: 0;
-        padding: 0;
-        /*justify-content: space-between;*/
-        
+        padding: 0;       
     }
 
     .nav-list ul {
         display: flex;
         padding: 0;
-        margin: 0;
-        
+        margin: 0;      
     }
 
     .dropdown {
@@ -443,11 +441,90 @@ footer {
     }
 
     section {
-        display: flex;
+        display: flex; 
+    }
+
+    .content {
+       text-align: left;
+       flex: 1 1 80%;
+       margin: 3em 0;
+    }
+
+    .content h2 {
+        margin: 0 0 0 2.6em;
+        padding: 0;
+    }
+    
+    .content p, .content div p {
+        margin: 1em 0 3em 4em;
     }
 
     .editor {
         order: 1;
+    }
+
+    .editor {
+        background-image: url("./images/illustration-editor-desktop.svg");
+        background-position: 200px 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .desktop {
+        background-image: url("./images/illustration-laptop-desktop.svg");
+        background-position: -200px 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+ 
+    }
+
+
+    .mobile-section {
+        display: flex;
+    }
+
+
+    .mobile-svg {
+        width: 50%;
+        min-height: 80vh;
+        top: -5%;
+        left: -5%;
+    }
+
+    .mid-column {
+        padding: 5em 0 3em 0;
+        margin: 3em 0;
+        background-image: url("./images/bg-pattern-circles.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -10px -180px;
+    }
+
+    .mid-column h2 {
+        margin-left: auto;
+        margin-right: 2em; 
+        width: 40%;
+    }
+
+    .mid-column p {
+        width: 40%;
+        margin: 1em 3em 3em auto;
+    }
+
+    .third {
+        flex-basis: 100%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid red;
+        width: 70%;
+        margin-left: 5em;
     }
 }
 
